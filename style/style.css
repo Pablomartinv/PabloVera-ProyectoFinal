@@ -1,0 +1,438 @@
+@font-face {
+    font-family: "MavenPro-Regular";
+    src: url(../fonts/MavenPro-Regular.ttf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:"MavenPro-Regular" ;
+}
+
+body{
+    background-color:rgb(242, 242, 242);
+    color:#797676;
+}
+
+/*INDEX*/
+#conteinerIndex{
+    display: grid;
+    grid-template-areas: 
+    "encabezado"
+    "principal"
+    "pie";
+    grid-template-rows: 100px auto 75px;
+    height: 100vh;
+}
+/*Grid areas*/
+header{
+    grid-area: encabezado;
+}
+main{
+    grid-area: principal;
+}
+footer{
+    grid-area: pie;
+}
+
+header{
+    display: flex;
+    flex-direction: row; /*valor por defecto*/
+    justify-content: center;
+    align-items:center;
+    width: 100%;  
+    height: 90px;
+    background-color:rgb(146, 230, 224);
+
+}
+
+.logo{
+    width: 10%;
+    height: 90px;
+    margin-left: 20px;
+    background-image: url(../imagenes/icono.jpg);
+    background-size:contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px; 
+}
+
+.titulo{
+    width:30%;
+    color: white;
+    text-align: center;
+    vertical-align: middle; 
+    font-size: 30px;    
+}
+
+.titulo a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu{
+    width: 60%;
+    text-align: right;
+    margin-right: 20px;
+    font-size: 20px;
+    
+}
+
+/*menu principal*/
+.menu ul{
+    list-style: none;
+    display: inline-block;   
+}
+
+ /*anclas del menu*/
+.menu ul a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;  
+    color: white;
+}
+
+/*items del menu*/
+.menu ul li{
+    float: left ;
+    position: relative;  
+     
+}
+
+.menu ul li :hover{
+    background:#479dc2;
+    
+}
+   /*menu desplegable*/
+.menu ul ul{
+    display: none;
+    position: absolute;
+}
+/*items del menu desplegable*/
+.menu ul ul li{
+    float: none;
+    text-align: center;
+}
+
+.menu ul li:hover ul{
+    display:block;
+    background:#479dc2;
+    
+}
+
+main{
+    display: flex;
+    flex-direction:column;   
+}
+
+.mainA{
+    width: 100%;
+    height: 600px;
+    background-image: url(../imagenes/quirofano.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-position-x: center;
+}
+
+.mainB{
+    display: flex;
+    height: 400px;
+        
+}
+
+article{
+    width: 40%;
+    margin: 30px;
+}
+
+.mainBfoto{
+    width: 60%;
+    margin: 30px;
+    background-image: url(../imagenes/cirugia1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+footer{
+    display: flex;
+    flex-direction: row; /*valor por defecto*/
+    justify-content: flex-start;
+    align-items: center;
+    height: 80px;
+    background-color:#479dc2 ;
+    font-size: 20px;
+    color:aliceblue;
+    padding: 0 10px;
+}
+
+.redes{
+    display:inline-block;
+    height: 40px;
+    border-radius: 15px;
+    margin: 0 20px;
+    
+
+}
+
+/* pagina:TRABAJA CON NOSOTROS*/    
+#conteinerTrabaja{
+    display: grid;
+    grid-template-areas: 
+    "encabezado encabezado"
+    "trabaja formulario"
+    "pie pie";
+    grid-template-rows: 100px auto 75px;
+    grid-template-columns: 30% 70%;
+    height: 100vh;
+}
+header{
+    grid-area: encabezado;
+}
+.mainTrabaja{
+    grid-area: trabaja;
+}
+.formulario{
+    grid-area: formulario;
+}
+footer{
+    grid-area: pie;
+}
+.mainTrabaja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+.mainTrabaja h1{
+    margin: 10px 0 20px;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: aliceblue;
+    color:#797676;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px 20px 20px;
+    box-shadow: 0 0 20px rgb(85, 113, 136);
+}
+.formA, .formB{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+}
+ form h2{
+    margin: 20px 0;
+ }
+form h3{
+    margin: 10px 0;
+}
+input, textarea{   
+    margin:10px 0;
+    padding: 10px;
+    outline: none;
+    border: #797676;  
+}
+#boton{
+    font-size: 20px;
+    background-color: #479dc2;
+    border-radius: 10px;
+    
+
+}
+
+/*pagina: ENCUENTRANOS*/
+#conteinerEncuentranos{
+    display: grid;
+    grid-template-areas: 
+    "encabezado"
+    "titulos"
+    "ubicacion"
+    "descripcion"
+    "pie";
+    grid-template-rows: 100px 100px auto auto 75px;
+    grid-template-columns: 100%;
+    height: 100vh;
+    
+}
+header{
+    grid-area: encabezado;
+}
+encuentranosTitulos{
+    grid-area: titulos;
+}
+.ubicacion{
+    grid-area: ubicacion;
+}
+.descripcion{
+    grid-area: descripcion;
+}
+footer{
+    grid-area: pie;
+}
+.encuentranosTitulos{
+    text-align: center;
+    margin: 20px;
+
+}
+.ubicacion{
+    display: flex;
+}
+
+#vistaExt{
+    width: 50%;
+    margin: 10px;
+}
+#mapa{
+    width: 50%;
+    margin: 10px;
+}
+.descripcion{
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0;
+
+}
+
+
+/*Pagina: NOSOTROS*/
+
+#conteinerNosotros{
+    display: grid;
+    grid-template-areas:
+    "encabezado encabezado"
+    "lateral nosotros"
+    "pie pie";
+    grid-template-rows: 100px auto 75px;
+    grid-template-columns: 30% 70%;
+    height: 100vh;
+}
+
+header{
+    grid-area: encabezado;
+}
+#navNosotros{
+    grid-area: lateral;
+}
+#mainNosotros{
+    grid-area: nosotros;
+}
+footer{
+    grid-area: pie;
+}
+
+#navNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;    
+}
+
+#navNosotros ul{
+    list-style: none;
+    background-color:aliceblue;
+    width: 90%; 
+    box-shadow: 0 0 20px rgb(85, 113, 136);
+    margin-top: 50px;  
+}
+
+#navNosotros ul li{
+    margin: 30px 20px;
+    padding: 10px;
+    border: 1px solid #eee;      
+}
+
+#navNosotros ul li a{
+    text-decoration: none;
+    color:gray; 
+    font-size: 20px;
+    display: block;
+    font-weight: 500;
+    transition: .1s;
+}
+ 
+#navNosotros ul li:hover{
+    background-color:#479dc2;
+    transform: scale(1.1); 
+}
+
+#navNosotros ul li a:hover{
+    color: whitesmoke;
+}
+#mainNosotros{
+    padding: 20px;
+}
+#mainNosotros h2{
+    margin:20px 0;
+}
+
+/*pagina: CAPACITACION*/
+
+#conteinerCapacitacion{
+    display: grid;
+    grid-template-areas:
+    "encabezado encabezado"
+    "lateral capacitacion"
+    "pie pie";
+    grid-template-rows: 100px auto 75px;
+    grid-template-columns: 30% 70%;
+    height: 100vh;
+}
+header{
+    grid-area: encabezado;
+}
+#navCapacitacion{
+    grid-area: lateral;
+}
+#mainCapacitacion{
+    grid-area: capacitacion;
+}
+footer{
+    grid-area: pie;
+}
+#navCapacitacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#navCapacitacion ul{
+    list-style: none;
+    background-color:aliceblue;
+    width: 90%; 
+    box-shadow: 0 0 20px rgb(85, 113, 136);
+    margin-top: 50px;  
+}
+
+#navCapacitacion ul li{
+    margin: 30px 20px;
+    padding: 10px;
+    border: 1px solid #eee;      
+}
+
+#navCapacitacion ul li a{
+    text-decoration: none;
+    color:gray; 
+    font-size: 20px;
+    display: block;
+    font-weight: 500;
+    transition: .1s;
+}
+ 
+#navCapacitacion ul li:hover{
+    background-color:#479dc2;
+    transform: scale(1.1); 
+}
+
+#navCapacitacion ul li a:hover{
+    color: whitesmoke;
+}
+#mainCapacitacion{
+    padding: 20px;
+}
+#mainCapacitacion h2{
+    margin:20px 0;
+}
