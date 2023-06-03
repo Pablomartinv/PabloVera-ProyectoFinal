@@ -25,7 +25,7 @@ body{
     height: 100vh;
 }
 /*Grid areas*/
-header{
+nav{
     grid-area: encabezado;
 }
 main{
@@ -125,7 +125,7 @@ footer{
     grid-template-columns: 30% 70%;
     height: 100vh;
 }
-header{
+nav{
     grid-area: encabezado;
 }
 .mainTrabaja{
@@ -196,7 +196,7 @@ input, textarea{
     height: 100vh;
     
 }
-header{
+nav{
     grid-area: encabezado;
 }
 encuentranosTitulos{
@@ -249,7 +249,7 @@ footer{
     height: 100vh;
 }
 
-header{
+nav{
     grid-area: encabezado;
 }
 #navNosotros{
@@ -319,7 +319,7 @@ footer{
     grid-template-columns: 30% 70%;
     height: 100vh;
 }
-header{
+nav{
     grid-area: encabezado;
 }
 #navCapacitacion{
