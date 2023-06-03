@@ -35,89 +35,28 @@ footer{
     grid-area: pie;
 }
 
-header{
-    display: flex;
-    flex-direction: row; /*valor por defecto*/
-    justify-content: center;
-    align-items:center;
-    width: 100%;  
-    height: 90px;
-    background-color:rgb(146, 230, 224);
-
+.navbar-brand{
+    color: whitesmoke !important;
+    font-size: 2rem;
 }
 
-.logo{
-    width: 10%;
-    height: 90px;
-    margin-left: 20px;
-    background-image: url(../imagenes/icono.jpg);
-    background-size:contain; 
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 20px; 
+.navbar-nav li a{
+    color:whitesmoke !important;
+    font-size: 1.5rem !important;
+}
+.dropdown-menu li a{
+    color: #797676 !important;
 }
 
-.titulo{
-    width:30%;
-    color: white;
-    text-align: center;
-    vertical-align: middle; 
-    font-size: 30px;    
+.navbar-brand:hover{
+    color: whitesmoke;
+}
+#navbarNavDropdown{
+    justify-content: end;
 }
 
-.titulo a{
-    text-decoration: none;
-    color: white;
-}
-
-.menu{
-    width: 60%;
-    text-align: right;
-    margin-right: 20px;
-    font-size: 20px;
-    
-}
-
-/*menu principal*/
-.menu ul{
-    list-style: none;
-    display: inline-block;   
-}
-
- /*anclas del menu*/
-.menu ul a{
-    display: block;
-    text-decoration: none;
-    padding: 10px;  
-    color: white;
-}
-
-/*items del menu*/
-.menu ul li{
-    float: left ;
-    position: relative;  
-     
-}
-
-.menu ul li :hover{
-    background:#479dc2;
-    
-}
-   /*menu desplegable*/
-.menu ul ul{
-    display: none;
-    position: absolute;
-}
-/*items del menu desplegable*/
-.menu ul ul li{
-    float: none;
-    text-align: center;
-}
-
-.menu ul li:hover ul{
-    display:block;
-    background:#479dc2;
-    
+#logo{
+    border-radius: 10px;
 }
 
 main{
