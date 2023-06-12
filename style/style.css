@@ -62,29 +62,8 @@ footer{
     margin: 5px;  
 }
 
-/* pagina:TRABAJA CON NOSOTROS*/  /*  
-#conteinerTrabaja{
-    display: grid;
-    grid-template-areas: 
-    "encabezado encabezado"
-    "trabaja formulario"
-    "pie pie";
-    grid-template-rows: 100px auto 75px;
-    grid-template-columns: 30% 70%;
-    height: 100vh;
-}
-nav{
-    grid-area: encabezado;
-}
-.mainTrabaja{
-    grid-area: trabaja;
-}
-.formulario{
-    grid-area: formulario;
-}
-footer{
-    grid-area: pie;
-}*/
+/* pagina:TRABAJA CON NOSOTROS*/ 
+
 .mainTrabaja{
     text-align: center;
     margin:10px;
@@ -140,7 +119,7 @@ input, textarea{
 }
 
 /*Pagina: NOSOTROS*/
-
+/*
 #conteinerNosotros{
     display: grid;
     grid-template-areas:
@@ -163,7 +142,7 @@ nav{
 }
 footer{
     grid-area: pie;
-}
+}*/
 
 #navNosotros{
     display: flex;
@@ -177,21 +156,22 @@ footer{
     background-color:aliceblue;
     width: 90%; 
     box-shadow: 0 0 20px rgb(85, 113, 136);
-    margin-top: 50px;  
+    margin-top: 2rem; 
+    padding-left: 0; 
 }
 
 #navNosotros ul li{
-    margin: 30px 20px;
-    padding: 10px;
+    margin: 1.8rem 1rem;
+    padding: 0.7rem;
     border: 1px solid #eee;      
 }
 
 #navNosotros ul li a{
     text-decoration: none;
     color:gray; 
-    font-size: 20px;
+    font-size: 1.5rem;
     display: block;
-    font-weight: 500;
+   
     transition: .1s;
 }
  
@@ -204,10 +184,10 @@ footer{
     color: whitesmoke;
 }
 #mainNosotros{
-    padding: 20px;
+    padding: 1.25rem;
 }
 #mainNosotros h2{
-    margin:20px 0;
+    margin:1.25rem 0;
 }
 .galeria{
     display: flex;
