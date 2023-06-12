@@ -62,7 +62,7 @@ footer{
     margin: 5px;  
 }
 
-/* pagina:TRABAJA CON NOSOTROS*/    
+/* pagina:TRABAJA CON NOSOTROS*/  /*  
 #conteinerTrabaja{
     display: grid;
     grid-template-areas: 
@@ -84,45 +84,47 @@ nav{
 }
 footer{
     grid-area: pie;
-}
+}*/
 .mainTrabaja{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
+    text-align: center;
+    margin:10px;
 }
 .mainTrabaja h1{
     margin: 10px 0 20px;
 }
+
 form{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;    
     justify-content: space-around;
     background-color: aliceblue;
     color:#797676;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 50px 20px 20px;
+    border-radius: 10px;        
     box-shadow: 0 0 20px rgb(85, 113, 136);
+    margin: 2rem 1rem;
+    
 }
+
 .formA, .formB{
+    width: 40%;
     display: flex;
     flex-direction: column;
+    margin: 1.5rem;
 }
- form h2{
-    margin: 20px 0;
- }
+ 
 form h3{
-    margin: 10px 0;
+    margin: 1rem 0;
 }
 input, textarea{   
-    margin:10px 0;
-    padding: 10px;
+    margin:10px 5px;
+    padding: 5px;
     outline: none;
-    border: #797676;  
+    border: #797676;
+   
 }
 #boton{
-    font-size: 20px;
+    font-size: 1rem;
     background-color: #479dc2;
     border-radius: 10px;   
 }
