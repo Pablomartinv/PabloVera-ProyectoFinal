@@ -119,30 +119,6 @@ input, textarea{
 }
 
 /*Pagina: NOSOTROS*/
-/*
-#conteinerNosotros{
-    display: grid;
-    grid-template-areas:
-    "encabezado encabezado"
-    "lateral nosotros"
-    "pie pie";
-    grid-template-rows: 100px auto 75px;
-    grid-template-columns: 30% 70%;
-    height: 100vh;
-}
-
-nav{
-    grid-area: encabezado;
-}
-#navNosotros{
-    grid-area: lateral;
-}
-#mainNosotros{
-    grid-area: nosotros;
-}
-footer{
-    grid-area: pie;
-}*/
 
 #navNosotros{
     display: flex;
@@ -201,7 +177,7 @@ footer{
 }
 
 /*pagina: CAPACITACION*/
-
+/*
 #conteinerCapacitacion{
     display: grid;
     grid-template-areas:
@@ -223,7 +199,7 @@ nav{
 }
 footer{
     grid-area: pie;
-}
+}*/
 #navCapacitacion{
     display: flex;
     flex-direction: column;
@@ -236,21 +212,22 @@ footer{
     background-color:aliceblue;
     width: 90%; 
     box-shadow: 0 0 20px rgb(85, 113, 136);
-    margin-top: 50px;  
+    margin-top: 2rem;
+    padding-left: 0;  
 }
 
 #navCapacitacion ul li{
-    margin: 30px 20px;
-    padding: 10px;
+    margin: 1.8rem 1rem;
+    padding: 0.7rem;
     border: 1px solid #eee;      
 }
 
 #navCapacitacion ul li a{
     text-decoration: none;
     color:gray; 
-    font-size: 20px;
+    font-size: 1.5rem;
     display: block;
-    font-weight: 500;
+    
     transition: .1s;
 }
  
@@ -263,8 +240,8 @@ footer{
     color: whitesmoke;
 }
 #mainCapacitacion{
-    padding: 20px;
+    padding: 1.25rem;
 }
 #mainCapacitacion h2{
-    margin:20px 0;
+    margin:1.25rem 0;
 }
