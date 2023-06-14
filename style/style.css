@@ -37,6 +37,10 @@ body{
 #navbarNavDropdown{
     justify-content: end;
 }
+.navbar-light .navbar-toggler{
+color: whitesmoke;
+border-color: whitesmoke;
+}
 
 #logo{
     border-radius: 10px;
@@ -177,29 +181,7 @@ input, textarea{
 }
 
 /*pagina: CAPACITACION*/
-/*
-#conteinerCapacitacion{
-    display: grid;
-    grid-template-areas:
-    "encabezado encabezado"
-    "lateral capacitacion"
-    "pie pie";
-    grid-template-rows: 100px auto 75px;
-    grid-template-columns: 30% 70%;
-    height: 100vh;
-}
-nav{
-    grid-area: encabezado;
-}
-#navCapacitacion{
-    grid-area: lateral;
-}
-#mainCapacitacion{
-    grid-area: capacitacion;
-}
-footer{
-    grid-area: pie;
-}*/
+
 #navCapacitacion{
     display: flex;
     flex-direction: column;
