@@ -42,10 +42,10 @@ color: whitesmoke;
 border-color: whitesmoke;
 }
 
-#logo{
+.logo{
     border-radius: 10px;
 }
-.main{
+.mainIndex{
     margin: 2rem 0;
 }
 .novedades{
@@ -106,7 +106,7 @@ input, textarea{
     border: #797676;
    
 }
-#boton{
+.boton{
     font-size: 1rem;
     background-color: #479dc2;
     border-radius: 10px;   
@@ -116,22 +116,24 @@ input, textarea{
 .tituloEncuentranos, .ubicacion, .descripcion{
     margin: 2rem 0;
 }
-
-#vistaExt, #mapa{    
+.tituloEncuentranos, .descripcion{
+    text-align: center;
+}
+.vistaExt, .mapa{    
     width: 100%;
     height: 100%;
 }
 
 /*Pagina: NOSOTROS*/
 
-#navNosotros{
+.navNosotros{
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;    
 }
 
-#navNosotros ul{
+.navNosotros ul{
     list-style: none;
     background-color:aliceblue;
     width: 90%; 
@@ -140,13 +142,13 @@ input, textarea{
     padding-left: 0; 
 }
 
-#navNosotros ul li{
+.navNosotros ul li{
     margin: 1.8rem 1rem;
     padding: 0.7rem;
     border: 1px solid #eee;      
 }
 
-#navNosotros ul li a{
+.navNosotros ul li a{
     text-decoration: none;
     color:gray; 
     font-size: 1.5rem;
@@ -155,18 +157,18 @@ input, textarea{
     transition: .1s;
 }
  
-#navNosotros ul li:hover{
+.navNosotros ul li:hover{
     background-color:#479dc2;
     transform: scale(1.1); 
 }
 
-#navNosotros ul li a:hover{
+.navNosotros ul li a:hover{
     color: whitesmoke;
 }
-#mainNosotros{
+.mainNosotros{
     padding: 1.25rem;
 }
-#mainNosotros h2{
+.mainNosotros h2{
     margin:1.25rem 0;
 }
 .galeria{
@@ -182,14 +184,14 @@ input, textarea{
 
 /*pagina: CAPACITACION*/
 
-#navCapacitacion{
+.navCapacitacion{
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
 }
 
-#navCapacitacion ul{
+.navCapacitacion ul{
     list-style: none;
     background-color:aliceblue;
     width: 90%; 
@@ -198,13 +200,13 @@ input, textarea{
     padding-left: 0;  
 }
 
-#navCapacitacion ul li{
+.navCapacitacion ul li{
     margin: 1.8rem 1rem;
     padding: 0.7rem;
     border: 1px solid #eee;      
 }
 
-#navCapacitacion ul li a{
+.navCapacitacion ul li a{
     text-decoration: none;
     color:gray; 
     font-size: 1.5rem;
@@ -213,17 +215,17 @@ input, textarea{
     transition: .1s;
 }
  
-#navCapacitacion ul li:hover{
+.navCapacitacion ul li:hover{
     background-color:#479dc2;
     transform: scale(1.1); 
 }
 
-#navCapacitacion ul li a:hover{
+.navCapacitacion ul li a:hover{
     color: whitesmoke;
 }
-#mainCapacitacion{
+.mainCapacitacion{
     padding: 1.25rem;
 }
-#mainCapacitacion h2{
+.mainCapacitacion h2{
     margin:1.25rem 0;
 }
