@@ -1,0 +1,37 @@
+.navbar-brand{
+    color: whitesmoke !important;
+    font-size: 2rem;
+    white-space:normal;
+    &:hover{
+        color: whitesmoke;
+    }
+}
+.navbar-nav{
+    li{
+        a{
+            color:whitesmoke !important;
+            font-size: 1.5rem !important;
+        }
+    } 
+} 
+
+.dropdown-menu{
+    li{
+        a{
+            color: #797676 !important;
+        }
+    } 
+}
+
+#navbarNavDropdown{
+    justify-content: end;
+}
+
+.navbar-light .navbar-toggler{
+    color: whitesmoke;
+    border-color: whitesmoke;
+    }
+    
+    .logo{
+        border-radius: 10px;
+    }

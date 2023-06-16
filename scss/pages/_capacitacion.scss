@@ -1,0 +1,41 @@
+.navCapacitacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    ul{
+        list-style: none;
+        background-color:aliceblue;
+        width: 90%; 
+        box-shadow: 0 0 20px rgb(85, 113, 136);
+        margin-top: 2rem;
+        padding-left: 0;
+        li{
+            margin: 1.8rem 1rem;
+            padding: 0.7rem;
+            border: 1px solid #eee;
+            a{
+                text-decoration: none;
+                color:gray; 
+                font-size: 1.5rem;
+                display: block;    
+                transition: .1s;
+                &:hover{
+                    color: whitesmoke;
+                }
+            }
+            &:hover{
+                background-color:#479dc2;
+                transform: scale(1.1); 
+            }      
+        }
+          
+    }
+}
+
+.mainCapacitacion{
+    padding: 1.25rem;
+    h2{
+        margin:1.25rem 0;
+    }
+}

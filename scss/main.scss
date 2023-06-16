@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "MavenPro-Regular";
+    src: url(../fonts/MavenPro-Regular.ttf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family:"MavenPro-Regular" ;
+}
+@import'./componentes/navbar';
+@import'./componentes/body';
+@import'./componentes/footer';
+@import'./pages/index';
+@import'./pages/trabaja.scss';
+@import'./pages/nosotros.scss';
+@import'./pages/encuentranos';
+@import'./pages/capacitacion';
+
+
+
