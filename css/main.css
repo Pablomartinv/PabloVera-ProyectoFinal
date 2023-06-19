@@ -62,13 +62,11 @@ footer {
 }
 
 .contenedorCarrusel {
-  width: 80%;
+  width: 90%;
   height: 500px;
   margin: auto;
-  margin-top: 5%;
-  border: 5px solid white;
-  border-radius: 15px;
   overflow: hidden;
+  padding: 0%;
 }
 
 .carrusel {
@@ -80,63 +78,45 @@ footer {
   animation-iteration-count: infinite;
 }
 
-.imagen1 {
-  background-image: url(../../imagenes/slider1.jpg);
+.carruselSlider {
   width: 100%;
   height: 500px;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   position: relative;
 }
-.imagen1 h2 {
-  position: relative;
-  width: 50%;
-  margin-top: 25%;
-  margin-left: 50%;
-  color: whitesmoke;
-  font-size: 2rem;
+.carruselSlider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.imagen2 {
-  background-image: url(../../imagenes/quirofano.jpg);
+.sliderFondo {
+  background: linear-gradient(#479dc2, rgb(255, 111, 0));
   width: 100%;
   height: 500px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-.imagen2 h2 {
-  position: relative;
-  width: 50%;
-  margin-top: 25%;
-  margin-left: 50%;
-  color: whitesmoke;
-  font-size: 2rem;
-}
-
-.imagen3 {
-  background-image: url(../../imagenes/slider2.jpg);
-  width: 100%;
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-.imagen3 h2 {
-  position: relative;
-  width: 50%;
-  margin-top: 25%;
-  margin-left: 50%;
-  color: whitesmoke;
-  font-size: 2rem;
-}
-
-.fondoCarrusel {
-  background: linear-gradient(#479dc2, rgb(255, 112, 51));
-  width: 100%;
-  height: 500px;
-  opacity: 0.7;
+  opacity: 0.6;
   position: absolute;
+  z-index: 1;
+}
+
+.sliderTitulo1, .sliderTitulo2 {
+  position: absolute;
+  width: 50%;
+  margin-top: 25%;
+  margin-left: 4%;
+  color: whitesmoke;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.sliderTitulo3 {
+  position: absolute;
+  width: 50%;
+  margin-top: 25%;
+  margin-left: 50%;
+  color: whitesmoke;
+  font-size: 2rem;
+  z-index: 2;
 }
 
 @keyframes mover {
@@ -166,7 +146,22 @@ footer {
   }
 }
 .novedades {
-  margin: 2rem 0;
+  margin: 3rem 0;
+}
+.novedades h2 {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 3rem;
+  border-top: 1px solid rgb(255, 189, 67);
+  padding-top: 1rem;
+}
+
+.novedadesImagen {
+  margin-top: 2rem;
+  overflow: hidden;
+}
+.novedadesImagen img {
+  object-fit: cover;
 }
 
 .mainTrabaja {
