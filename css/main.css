@@ -8,6 +8,10 @@
   font-family: "MavenPro-Regular";
 }
 
+.navbar {
+  background-color: rgb(146, 230, 224);
+}
+
 .navbar-brand {
   color: whitesmoke !important;
   font-size: 2rem;
@@ -166,7 +170,7 @@ footer {
 
 .mainTrabaja {
   text-align: center;
-  margin: 10px;
+  margin: 3rem 1rem;
 }
 .mainTrabaja h1 {
   margin: 10px 0 20px;
@@ -181,7 +185,7 @@ form {
   color: #797676;
   border-radius: 10px;
   box-shadow: 0 0 20px rgb(85, 113, 136);
-  margin: 2rem 1rem;
+  margin: 4rem 1rem;
 }
 form h3 {
   margin: 1rem 0;
@@ -204,7 +208,9 @@ input, textarea {
 .boton {
   font-size: 1rem;
   background-color: #479dc2;
-  border-radius: 10px;
+  border-radius: 5px;
+  border: none;
+  color: whitesmoke;
 }
 
 .navNosotros {
@@ -218,7 +224,7 @@ input, textarea {
   background-color: aliceblue;
   width: 90%;
   box-shadow: 0 0 20px rgb(85, 113, 136);
-  margin-top: 2rem;
+  margin-top: 4rem;
   padding-left: 0;
 }
 .navNosotros ul li {
@@ -227,25 +233,24 @@ input, textarea {
   border: 1px solid #eee;
 }
 .navNosotros ul li:hover {
-  background-color: #479dc2;
+  background-color: rgb(146, 230, 224);
   transform: scale(1.1);
+}
+.navNosotros ul li:hover a {
+  color: whitesmoke;
 }
 .navNosotros ul li a {
   text-decoration: none;
   color: gray;
   font-size: 1.5rem;
   display: block;
-  transition: 0.1s;
-}
-.navNosotros ul li a:hover {
-  color: whitesmoke;
 }
 
 .mainNosotros {
   padding: 1.25rem;
 }
-.mainNosotros h2 {
-  margin: 1.25rem 0;
+.mainNosotros h1, .mainNosotros h2 {
+  margin: 2rem 0;
 }
 
 .galeria {
@@ -261,6 +266,9 @@ input, textarea {
 
 .ubicacion {
   margin: 2rem 0;
+  border-top: 1px solid rgb(255, 189, 67);
+  border-bottom: 1px solid rgb(255, 189, 67);
+  padding: 1rem;
 }
 
 .tituloEncuentranos, .descripcion {
@@ -284,7 +292,7 @@ input, textarea {
   background-color: aliceblue;
   width: 90%;
   box-shadow: 0 0 20px rgb(85, 113, 136);
-  margin-top: 2rem;
+  margin-top: 4rem;
   padding-left: 0;
 }
 .navCapacitacion ul li {
@@ -292,26 +300,25 @@ input, textarea {
   padding: 0.7rem;
   border: 1px solid #eee;
 }
+.navCapacitacion ul li:hover {
+  background-color: rgb(146, 230, 224);
+  transform: scale(1.1);
+}
+.navCapacitacion ul li:hover a {
+  color: whitesmoke;
+}
 .navCapacitacion ul li a {
   text-decoration: none;
   color: gray;
   font-size: 1.5rem;
   display: block;
-  transition: 0.2s;
-}
-.navCapacitacion ul li a:hover {
-  color: whitesmoke;
-}
-.navCapacitacion ul li:hover {
-  background-color: #479dc2;
-  transform: scale(1.1);
 }
 
 .mainCapacitacion {
   padding: 1.25rem;
 }
-.mainCapacitacion h2 {
-  margin: 1.25rem 0;
+.mainCapacitacion h1, .mainCapacitacion h2 {
+  margin: 2rem 0;
 }
 
 /*# sourceMappingURL=main.css.map */

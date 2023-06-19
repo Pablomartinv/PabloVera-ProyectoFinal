@@ -8,25 +8,25 @@
         background-color:aliceblue;
         width: 90%; 
         box-shadow: 0 0 20px rgb(85, 113, 136);
-        margin-top: 2rem; 
+        margin-top: 4rem; 
         padding-left: 0;
         li{
             margin: 1.8rem 1rem;
             padding: 0.7rem;
             border: 1px solid #eee;
             &:hover{
-                background-color:#479dc2;
-                transform: scale(1.1); 
+                background-color:rgb(146, 230, 224);
+                transform: scale(1.1);
+                a{
+                    color: whitesmoke;
+                } 
             }
             a{
                 text-decoration: none;
                 color:gray; 
                 font-size: 1.5rem;
                 display: block;               
-                transition: .1s;
-                &:hover{
-                    color: whitesmoke;
-                }
+               
             }      
         } 
     }
@@ -34,8 +34,9 @@
 
 .mainNosotros{
     padding: 1.25rem;
-    h2{
-        margin:1.25rem 0;
+    h1, h2{
+        margin:2rem 0;       
+
     }
 }
 
