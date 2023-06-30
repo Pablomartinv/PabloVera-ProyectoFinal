@@ -41,23 +41,24 @@
     z-index: +1;    
 }
 
-.sliderTitulo1, .sliderTitulo2{
+.sliderTitulo1{
     position:absolute;
     width: 50%;
-    margin-top: 25%;
+    margin-top: 20%;
     margin-left: 4%;
     color: whitesmoke;
     font-size: 2rem;
     z-index: +2;
 }
+.sliderTitulo2{
+    @extend .sliderTitulo1;
+}
+
 .sliderTitulo3{
-    position:absolute;
-    width: 50%;
-    margin-top: 25%;
-    margin-left: 50%;
-    color: whitesmoke;
-    font-size: 2rem;
-    z-index: +2;
+    @extend .sliderTitulo1;
+    margin-left: 40%;
+    margin-right: 10%;
+
 }
 
 
