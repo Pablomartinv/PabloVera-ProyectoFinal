@@ -5,7 +5,7 @@
     align-items: center;
     ul{
         list-style: none;
-        background-color:aliceblue;
+        background-color:$fondoContenedor;
         width: 90%; 
         box-shadow: 0 0 20px rgb(85, 113, 136);
         margin-top: 4rem; 
@@ -14,7 +14,7 @@
             position: relative;         
             a{
                 text-decoration: none;
-                color: grey;
+                color: $letraOscura;
                 font-size: 1.5rem;
                 display: block;
                 margin:1rem;
@@ -24,7 +24,7 @@
                 overflow: hidden;
                 span{
                     position: absolute;
-                    background: #5ccdfd;
+                    background: $colorCeleste;
                      transition: .5s;
                     &:nth-child(1){
                         width: 100%;
@@ -52,7 +52,7 @@
                     }
                 }
                 &:hover{
-                    color: #5ccdfd;
+                    color: $colorCeleste;
                     span:nth-child(1){
                         left: 0;                    
                     }

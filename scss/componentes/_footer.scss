@@ -3,10 +3,10 @@ footer{
     flex-wrap: wrap;   
     justify-content: space-around; 
     align-items: center;
-    background-color: #479dc2;
+    background-color: $colorAzul;
     width: 100%;
     font-size: 1.25rem;
-    color: aliceblue; 
+    color: $letraClara; 
     box-sizing: border-box;
     p{
         text-align: center;
@@ -33,3 +33,9 @@ footer{
         justify-content: center;
     }
 }
+@media (max-width:425px){
+    footer{
+        font-size: 1rem;
+    }
+    
+    }

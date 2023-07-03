@@ -5,7 +5,8 @@
     "encabezado"
     "ubicacion"
     "descripcion"
-    "pie";box-sizing: border-box;
+    "pie";
+    box-sizing: border-box;
     grid-template-columns: 100%;
     grid-template-rows:auto 3fr auto 2fr auto;
     height: 100vh;
@@ -14,7 +15,7 @@
 }
 
 nav{
-    grid-template-areas: navbar;
+    grid-area: navbar;
 }
 
 .tituloEncuentranos{
@@ -41,8 +42,8 @@ footer{
     flex-direction: row;
     flex-wrap: wrap;
     margin: 2rem 1rem;
-    border-top: 1px solid rgb(255, 189, 67);
-    border-bottom:1px solid rgb(255, 189, 67) ;
+    border-top: 1px solid $colorCalido;
+    border-bottom:1px solid $colorCalido ;
     justify-content: space-around;
     align-items: center;
 }

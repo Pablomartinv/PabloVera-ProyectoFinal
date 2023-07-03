@@ -53,10 +53,10 @@ footer {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #479dc2;
+  background-color: #1b83b0;
   width: 100%;
   font-size: 1.25rem;
-  color: aliceblue;
+  color: whitesmoke;
   box-sizing: border-box;
 }
 footer p {
@@ -81,14 +81,45 @@ footer p {
     justify-content: center;
   }
 }
-.mainIndex {
-  margin: 2rem 0;
+@media (max-width: 425px) {
+  footer {
+    font-size: 1rem;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-areas: "navbar" "slider" "novedades" "pie";
+  grid-template-rows: auto 3fr 2fr auto;
+  grid-template-columns: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+nav {
+  grid-area: navbar;
+}
+
+.contenedorCarrusel {
+  grid-area: slider;
+}
+
+.novedades {
+  grid-area: novedades;
+}
+
+.novedadesImagen {
+  grid-area: foto;
+}
+
+footer {
+  grid-area: pie;
 }
 
 .contenedorCarrusel {
   width: 90%;
   height: 500px;
-  margin: auto;
+  margin: 3rem auto;
   overflow: hidden;
   padding: 0%;
 }
@@ -135,7 +166,7 @@ footer p {
 
 .sliderTitulo3 {
   margin-left: 40%;
-  margin-right: 10%;
+  margin-right: 5%;
 }
 
 @keyframes mover {
@@ -165,24 +196,53 @@ footer p {
   }
 }
 .novedades {
-  margin: 3rem 0;
-}
-.novedades h2 {
-  text-align: center;
-  margin: 1rem 0;
-  font-size: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   border-top: 1px solid rgb(255, 189, 67);
-  padding-top: 1rem;
+}
+
+.novedadesTexto {
+  padding: 1rem;
+  width: 45%;
+}
+.novedadesTexto h2 {
+  text-align: center;
+  font-size: 3rem;
+}
+.novedadesTexto h3 {
+  margin: 1rem 0;
 }
 
 .novedadesImagen {
-  margin-top: 2rem;
+  width: 50%;
+  margin: 6rem 1rem 0;
   overflow: hidden;
 }
 .novedadesImagen img {
   object-fit: cover;
+  width: 100%;
 }
 
+@media (max-width: 1024px) {
+  .novedades {
+    flex-direction: column;
+    align-items: center;
+  }
+  .novedadesTexto {
+    width: 90%;
+  }
+  .novedadesImagen {
+    width: 90%;
+    margin: 2rem auto;
+  }
+}
+@media (max-width: 320px) {
+  .sliderTitulo1, .sliderTitulo2, .sliderTitulo3 {
+    font-size: 1.5rem;
+    margin-top: 60%;
+  }
+}
 .mainTrabaja {
   text-align: center;
   margin: 3rem 1rem;
@@ -253,7 +313,7 @@ input, textarea {
 }
 .boton:hover::after {
   transform: scale(400);
-  background-color: #5ccdfd;
+  background-color: rgb(146, 230, 224);
 }
 .boton span {
   position: relative;
@@ -280,7 +340,7 @@ input, textarea {
 }
 .navNosotros ul li a {
   text-decoration: none;
-  color: grey;
+  color: #797676;
   font-size: 1.5rem;
   display: block;
   margin: 1rem;
@@ -291,7 +351,7 @@ input, textarea {
 }
 .navNosotros ul li a span {
   position: absolute;
-  background: #5ccdfd;
+  background: rgb(146, 230, 224);
   transition: 0.5s;
 }
 .navNosotros ul li a span:nth-child(1) {
@@ -319,7 +379,7 @@ input, textarea {
   right: 0;
 }
 .navNosotros ul li a:hover {
-  color: #5ccdfd;
+  color: rgb(146, 230, 224);
 }
 .navNosotros ul li a:hover span:nth-child(1) {
   left: 0;
@@ -353,7 +413,7 @@ input, textarea {
 }
 
 a {
-  color: #5ccdfd;
+  color: rgb(146, 230, 224);
   text-decoration: none;
 }
 a:hover {
@@ -371,7 +431,7 @@ a:hover {
 }
 
 nav {
-  grid-template-areas: navbar;
+  grid-area: navbar;
 }
 
 .tituloEncuentranos {
@@ -442,7 +502,7 @@ footer {
 }
 .navCapacitacion ul li a {
   text-decoration: none;
-  color: grey;
+  color: #797676;
   font-size: 1.5rem;
   display: block;
   margin: 1rem;
@@ -453,7 +513,7 @@ footer {
 }
 .navCapacitacion ul li a span {
   position: absolute;
-  background: #5ccdfd;
+  background: rgb(146, 230, 224);
   transition: 0.5s;
 }
 .navCapacitacion ul li a span:nth-child(1) {
@@ -481,7 +541,7 @@ footer {
   right: 0;
 }
 .navCapacitacion ul li a:hover {
-  color: #5ccdfd;
+  color: rgb(146, 230, 224);
 }
 .navCapacitacion ul li a:hover span:nth-child(1) {
   left: 0;

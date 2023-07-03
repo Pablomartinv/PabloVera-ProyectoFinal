@@ -14,8 +14,8 @@ form{
     flex-direction: row;
     flex-wrap: wrap;    
     justify-content: space-around;
-    background-color: aliceblue;
-    color:#797676;
+    background-color: $fondoContenedor;
+    color: $letraOscura;
     border-radius: 10px;        
     box-shadow: 0 0 20px rgb(85, 113, 136);
     margin: 4rem 1rem;
@@ -39,7 +39,7 @@ input, textarea{
     margin:10px 5px;
     padding: 5px;
     outline: none;
-    border: #797676;
+    border: $letraOscura;
    
 }
 .boton{
@@ -50,10 +50,10 @@ input, textarea{
     align-items: center;
     justify-content: center;
     font-size: 20px;
-    background-color: #1b83b0;
+    background-color: $colorAzul;
     border-radius: 5px;
     border: none;
-    color: whitesmoke;
+    color: $letraClara;
     position: relative;
     overflow: hidden;
     transition: .3s ease all;
@@ -71,7 +71,7 @@ input, textarea{
     }
     &:hover::after{
         transform: scale(400);
-        background-color:#5ccdfd;
+        background-color: $colorCeleste;
 
     }
     span{

@@ -12,7 +12,7 @@
     <title>Quirofano Hospital de Urgencias-Home</title>
 </head>
 <body>
-<div class="container-fluid"> <!--aplicando sistema de grillas de Bootstrap con clases container fluid, row y col-->
+<div class="container-fluid grid"> 
     <div class="row">
     <nav class="navbar navbar-expand-lg navbar-light"><!--Navbar de Bootstrap-->
         <div class="container-fluid">            
@@ -45,41 +45,38 @@
         </div>
     </nav>
     </div>
-    <main class="row mainIndex">
-        <div class="col-sm-12 col-md-12 col-lg-12 contenedorCarrusel">
-            <div class="carrusel">
-                <div class="carruselSlider">
-                    <div class="sliderFondo"></div> 
-                    <p class="sliderTitulo1">Contamos con un equipo de profesionales especialistas en la emergencia quirurgica</p>                                                         
-                    <img src="./imagenes/slider2.jpg" alt="imagen cirujano">                                        
-                </div>
-                <div class="carruselSlider">  
-                    <div class="sliderFondo"></div>                  
-                    <p class="sliderTitulo2">Nuestro equipo arco en C brinda imágenes intraoperatorias con resolución HD</p>
-                    <img src="./imagenes/arcoC.jpg" alt="imagen de arco en C">
-                </div>
-                <div class="carruselSlider">
-                    <div class="sliderFondo"></div>
-                    <p class="sliderTitulo3">Trabajamos para brindar máxima calidad y seguridad en el cuidado de la salud</p>
-                    <img src="./imagenes/slider1.jpg" alt="imagen de instrumentadora">
-                </div>                   
-            </div>            
-        </div>
+    <main class="contenedorCarrusel">
+        <div class="carrusel">
+            <div class="carruselSlider">
+                <div class="sliderFondo"></div> 
+                <p class="sliderTitulo1">Contamos con un equipo de profesionales especialistas en la emergencia quirurgica</p>                                                         
+                <img src="./imagenes/slider2.jpg" alt="imagen cirujano">                                        
+            </div>
+            <div class="carruselSlider">  
+                <div class="sliderFondo"></div>                  
+                <p class="sliderTitulo2">Nuestro equipo arco en C brinda imágenes intraoperatorias con resolución HD</p>
+                <img src="./imagenes/arcoC.jpg" alt="imagen de arco en C">
+            </div>
+            <div class="carruselSlider">
+                <div class="sliderFondo"></div>
+                <p class="sliderTitulo3">Trabajamos para brindar máxima calidad y seguridad en el cuidado de la salud</p>
+                <img src="./imagenes/slider1.jpg" alt="imagen de instrumentadora">
+            </div>                   
+        </div>            
     </main>
-    <section class="row novedades">
-        <h2>Novedades</h2>
-        <div class="col-sm-12 col-md-12 col-lg-5">            
+    <article class="novedades">
+        <section class="novedadesTexto">
+            <h2>Novedades</h2>                    
             <h3>El Hospital de Urgencias tendrá una Unidad dedicada a la Procuración de Órganos y Tejidos para la donación y el trasplante </h3>
             <p>El Hospital de Urgencias tendrá su propia Unidad Hospitalaria de Procuración de Órganos y Tejidos, gracias a un convenio firmado por el viceintendente de la ciudad y el INCUCAI.</p>
             <p> El mismo brindará asistencia técnica y financiera al establecimiento mediante el Programa Procurar, que busca incrementar la disponibilidad de órganos y tejidos para pacientes.</p>
             <p>El Urgencias será uno de los cinco hospitales que forman parte de esta propuesta, que incluye también al Hospital Posadas (Morón, BA), Hospital Eva Perón (Merlo, BA), Hospital Dr. Federico Abete (Malvinas Argentinas, BA) y Hospital Perrando (Resistencia, Chaco).</p>
             <p>De esta forma, el Municipio mejora la capacidad de respuesta a la demanda de trasplante en Córdoba, actividad que el Hospital de Urgencias lleva a cabo desde 1980 y de la cual fue referente durante esa década, acaparando una tercera parte de la actividad desarrollada en todo el país.</p>
-        </div>
-
-        <div class="col-sm-12 col-md-12 col-lg-7 novedadesImagen">
+        </section>
+        <div class="novedadesImagen">
             <img src="./imagenes/cirugia1.jpg" alt="imagen cirugia">
         </div>
-    </section>           
+    </article>           
     <footer> 
         <p>SIGUENOS en nuestras redes sociales</p>
         <div>

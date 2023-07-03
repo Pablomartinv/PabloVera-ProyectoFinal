@@ -1,19 +1,19 @@
 .navbar{
-    background-color: rgb(146, 230, 224);
+    background-color: $colorCeleste;
 }
 
 .navbar-brand{
-    color: whitesmoke !important;
+    color: $letraClara !important;
     font-size: 2rem;
     white-space:normal;
     &:hover{
-        color: whitesmoke;
+        color: $letraClara;
     }
 }
 .navbar-nav{
     li{
         a{
-            color:whitesmoke !important;
+            color:$letraClara !important;
             font-size: 1.5rem !important;
         }
     } 
@@ -22,7 +22,7 @@
 .dropdown-menu{
     li{
         a{
-            color: #797676 !important;
+            color: $letraOscura !important;
         }
     } 
 }
@@ -32,8 +32,8 @@
 }
 
 .navbar-light .navbar-toggler{
-    color: whitesmoke;
-    border-color: whitesmoke;
+    color: $letraClara;
+    border-color: $letraClara;
     }
     
     .logo{
