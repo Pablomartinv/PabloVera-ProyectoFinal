@@ -1,9 +1,34 @@
-.navNosotros{
-    @include navbarSecundaria;
+.gridNosotros{
+    display: grid;
+    grid-template-areas:
+    "navbar navbar"
+    "lateral nosotros"
+    "pie pie";
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 3fr auto 2fr;
+    height: 100vh;
+    padding: 0; 
+}
+
+nav{
+    grid-area: navbar;
+}
+
+aside{
+    grid-area: lateral;
 }
 
 .mainNosotros{
+    grid-area: nosotros;
     @include estilosContenidoSecundario;
+}
+
+footer{
+    grid-area: pie;
+}
+
+.navNosotros{
+    @include navbarSecundaria;
 }
 
 .galeria{
@@ -18,9 +43,21 @@
 }
 
 a{
-    color: $colorCeleste;
+    color: $colorAzul;
     text-decoration: none;
-    &:hover{
+    &:focus{
         color:$colorCalido ;
+    }
+}
+
+@media (max-width:768px){
+    .gridNosotros{
+        grid-template-areas:
+        "navbar"
+        "lateral"
+        "nosotros"
+        "pie";
+        grid-template-columns: 100%;
+
     }
 }

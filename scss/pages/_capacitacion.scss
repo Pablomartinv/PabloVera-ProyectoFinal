@@ -1,14 +1,80 @@
+.gridCapacitacion{
+    display: grid;
+    grid-template-areas:
+    "navbar navbar"
+    "lateral capacitacion"
+    "pie pie";
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 3fr auto 2fr;
+    height: 100vh;
+    padding: 0;
+}
+
+nav{
+    grid-area: navbar;
+}
+
+aside{
+    grid-area: lateral;
+}
+
+.mainCapacitacion{
+    grid-area: capacitacion;
+    @include estilosContenidoSecundario;
+    ul{
+        list-style: none;
+        li{
+            a{
+                img{
+                    width: 35px;
+                    height: 30px;
+                    border-radius: 5px;
+                    padding-bottom: 2px;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    grid-area: pie;
+}
+
 .navCapacitacion{
     @include navbarSecundaria;
 }
 
-.mainCapacitacion{
-    @include estilosContenidoSecundario;
-}
 .curso{
-    font-size: 2rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: end; 
+    flex-wrap: wrap;   
+    p{
+       position: absolute;
+       z-index: +1;
+       font-size: 2rem;    
+       color: $letraClara;
+       margin-right: 1rem;       
+        
+    }
+
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        
+    }
+}
+
+@media (max-width:768px){
+    .gridCapacitacion{
+        grid-template-areas:
+        "navbar"
+        "lateral"
+        "capacitacion"
+        "pie";
+        grid-template-columns: 100%;
+
+    }
 }

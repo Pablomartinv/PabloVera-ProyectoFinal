@@ -1,4 +1,31 @@
+.gridTrabaja{
+    display: grid;
+    grid-template-areas: 
+    "navbar"
+    "trabaja"
+    "pie";
+    grid-template-columns: 100%;
+    grid-template-rows: 3fr auto 2fr;
+}
+
+nav{
+    grid-area: navbar;
+}
 .mainTrabaja{
+    grid-area: trabaja;
+}
+footer{
+    grid-area: pie;
+}
+
+.mainTrabaja{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.textoTrabaja{
+    width: 30%;
     text-align: center;
     margin:3rem 1rem;
     h1{
@@ -12,7 +39,8 @@
 form{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;    
+    flex-wrap: wrap;
+    width: 60%;    
     justify-content: space-around;
     background-color: $fondoContenedor;
     color: $letraOscura;
@@ -81,6 +109,16 @@ input, textarea{
     }
 }   
 
+@media (max-width:800px){
+    .formA, .formB{
+        width: 80%;
+    }
+}
 
-
+@media(max-width:640px){
+    .textoTrabaja, form{
+        width:85%;
+        margin: 1rem;
+    }
+}
 

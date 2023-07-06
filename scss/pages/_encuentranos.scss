@@ -2,13 +2,11 @@
     display: grid;
     grid-template-areas:
     "navbar" 
-    "encabezado"
-    "ubicacion"
-    "descripcion"
+    "encuentranos"
     "pie";
     box-sizing: border-box;
     grid-template-columns: 100%;
-    grid-template-rows:auto 3fr auto 2fr auto;
+    grid-template-rows: 3fr auto 2fr;
     height: 100vh;
     padding: 0;
 
@@ -18,14 +16,8 @@ nav{
     grid-area: navbar;
 }
 
-.tituloEncuentranos{
-    grid-area: encabezado;
-}
-.ubicacion{
-    grid-area: ubicacion;
-}
-.descripcion{
-    grid-area: descripcion;
+.mainEncuentranos{
+    grid-area: encuentranos;
 }
 footer{
     grid-area: pie;

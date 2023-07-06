@@ -86,10 +86,10 @@ footer p {
     font-size: 1rem;
   }
 }
-.grid {
+.gridIndex {
   display: grid;
-  grid-template-areas: "navbar" "slider" "novedades" "pie";
-  grid-template-rows: auto 3fr 2fr auto;
+  grid-template-areas: "navbar" "principal" "pie";
+  grid-template-rows: 3fr auto 2fr;
   grid-template-columns: 100%;
   height: 100vh;
   box-sizing: border-box;
@@ -100,20 +100,20 @@ nav {
   grid-area: navbar;
 }
 
-.contenedorCarrusel {
-  grid-area: slider;
-}
-
-.novedades {
-  grid-area: novedades;
-}
-
-.novedadesImagen {
-  grid-area: foto;
+.mainIndex {
+  grid-area: principal;
 }
 
 footer {
   grid-area: pie;
+}
+
+.mainIndex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .contenedorCarrusel {
@@ -234,7 +234,7 @@ footer {
   }
   .novedadesImagen {
     width: 90%;
-    margin: 2rem auto;
+    margin: 0 auto 1rem;
   }
 }
 @media (max-width: 320px) {
@@ -243,14 +243,40 @@ footer {
     margin-top: 60%;
   }
 }
+.gridTrabaja {
+  display: grid;
+  grid-template-areas: "navbar" "trabaja" "pie";
+  grid-template-columns: 100%;
+  grid-template-rows: 3fr auto 2fr;
+}
+
+nav {
+  grid-area: navbar;
+}
+
 .mainTrabaja {
+  grid-area: trabaja;
+}
+
+footer {
+  grid-area: pie;
+}
+
+.mainTrabaja {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.textoTrabaja {
+  width: 30%;
   text-align: center;
   margin: 3rem 1rem;
 }
-.mainTrabaja h1 {
+.textoTrabaja h1 {
   margin: 10px 0 20px;
 }
-.mainTrabaja p {
+.textoTrabaja p {
   margin-right: 10px;
 }
 
@@ -258,6 +284,7 @@ form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 60%;
   justify-content: space-around;
   background-color: aliceblue;
   color: #797676;
@@ -321,6 +348,49 @@ input, textarea {
   transition: 0.5s ease all;
 }
 
+@media (max-width: 800px) {
+  .formA, .formB {
+    width: 80%;
+  }
+}
+@media (max-width: 640px) {
+  .textoTrabaja, form {
+    width: 85%;
+    margin: 1rem;
+  }
+}
+.gridNosotros {
+  display: grid;
+  grid-template-areas: "navbar navbar" "lateral nosotros" "pie pie";
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 3fr auto 2fr;
+  height: 100vh;
+  padding: 0;
+}
+
+nav {
+  grid-area: navbar;
+}
+
+aside {
+  grid-area: lateral;
+}
+
+.mainNosotros {
+  grid-area: nosotros;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+}
+.mainNosotros h1, .mainNosotros h2, .mainNosotros h3 {
+  margin: 1rem 0;
+}
+
+footer {
+  grid-area: pie;
+}
+
 .navNosotros {
   display: flex;
   flex-direction: column;
@@ -343,7 +413,7 @@ input, textarea {
   color: #797676;
   font-size: 1.5rem;
   display: block;
-  margin: 1rem;
+  margin: 1rem 0.5rem;
   padding: 0.7rem;
   position: relative;
   transition: 0.5s;
@@ -394,13 +464,6 @@ input, textarea {
   top: 0;
 }
 
-.mainNosotros {
-  padding: 1.25rem;
-}
-.mainNosotros h1, .mainNosotros h2 {
-  margin: 2rem 0;
-}
-
 .galeria {
   display: flex;
   flex-wrap: wrap;
@@ -413,19 +476,25 @@ input, textarea {
 }
 
 a {
-  color: rgb(146, 230, 224);
+  color: #1b83b0;
   text-decoration: none;
 }
-a:hover {
+a:focus {
   color: rgb(255, 189, 67);
 }
 
+@media (max-width: 768px) {
+  .gridNosotros {
+    grid-template-areas: "navbar" "lateral" "nosotros" "pie";
+    grid-template-columns: 100%;
+  }
+}
 .gridEncuentranos {
   display: grid;
-  grid-template-areas: "navbar" "encabezado" "ubicacion" "descripcion" "pie";
+  grid-template-areas: "navbar" "encuentranos" "pie";
   box-sizing: border-box;
   grid-template-columns: 100%;
-  grid-template-rows: auto 3fr auto 2fr auto;
+  grid-template-rows: 3fr auto 2fr;
   height: 100vh;
   padding: 0;
 }
@@ -434,16 +503,8 @@ nav {
   grid-area: navbar;
 }
 
-.tituloEncuentranos {
-  grid-area: encabezado;
-}
-
-.ubicacion {
-  grid-area: ubicacion;
-}
-
-.descripcion {
-  grid-area: descripcion;
+.mainEncuentranos {
+  grid-area: encuentranos;
 }
 
 footer {
@@ -483,6 +544,47 @@ footer {
     width: 90%;
   }
 }
+.gridCapacitacion {
+  display: grid;
+  grid-template-areas: "navbar navbar" "lateral capacitacion" "pie pie";
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 3fr auto 2fr;
+  height: 100vh;
+  padding: 0;
+}
+
+nav {
+  grid-area: navbar;
+}
+
+aside {
+  grid-area: lateral;
+}
+
+.mainCapacitacion {
+  grid-area: capacitacion;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+}
+.mainCapacitacion h1, .mainCapacitacion h2, .mainCapacitacion h3 {
+  margin: 1rem 0;
+}
+.mainCapacitacion ul {
+  list-style: none;
+}
+.mainCapacitacion ul li a img {
+  width: 35px;
+  height: 30px;
+  border-radius: 5px;
+  padding-bottom: 2px;
+}
+
+footer {
+  grid-area: pie;
+}
+
 .navCapacitacion {
   display: flex;
   flex-direction: column;
@@ -505,7 +607,7 @@ footer {
   color: #797676;
   font-size: 1.5rem;
   display: block;
-  margin: 1rem;
+  margin: 1rem 0.5rem;
   padding: 0.7rem;
   position: relative;
   transition: 0.5s;
@@ -556,19 +658,31 @@ footer {
   top: 0;
 }
 
-.mainCapacitacion {
-  padding: 1.25rem;
+.curso {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-wrap: wrap;
 }
-.mainCapacitacion h1, .mainCapacitacion h2 {
-  margin: 2rem 0;
+.curso p {
+  position: absolute;
+  z-index: 1;
+  font-size: 2rem;
+  color: whitesmoke;
+  margin-right: 1rem;
+}
+.curso img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
-.curso {
-  font-size: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media (max-width: 768px) {
+  .gridCapacitacion {
+    grid-template-areas: "navbar" "lateral" "capacitacion" "pie";
+    grid-template-columns: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
