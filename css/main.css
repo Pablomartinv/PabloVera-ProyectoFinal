@@ -505,17 +505,14 @@ nav {
 
 .mainEncuentranos {
   grid-area: encuentranos;
-}
-
-footer {
-  grid-area: pie;
-}
-
-.mainEncuentranos {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  grid-area: pie;
 }
 
 .ubicacion {
@@ -683,6 +680,41 @@ footer {
     grid-template-areas: "navbar" "lateral" "capacitacion" "pie";
     grid-template-columns: 100%;
   }
+}
+.notFound {
+  border: 4px rgb(255, 189, 67) solid;
+  background-image: url(../imagenes/instrumentador.jpeg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: whitesmoke;
+  height: 100vh;
+}
+.notFound h1 {
+  margin: 2rem 0 1rem;
+}
+.notFound h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.notFound div {
+  width: 50%;
+  border: 2px rgb(146, 230, 224) solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  font-size: 2rem;
+}
+.notFound div a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 1rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

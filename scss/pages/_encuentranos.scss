@@ -18,17 +18,16 @@ nav{
 
 .mainEncuentranos{
     grid-area: encuentranos;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    
 }
 footer{
     grid-area: pie;
 }
 
-.mainEncuentranos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 .ubicacion{
     display: flex;
     flex-direction: row;
