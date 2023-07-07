@@ -48,14 +48,14 @@ footer{
     display: flex;
     justify-content: end;
     align-items: end; 
-    flex-wrap: wrap;   
+    flex-wrap: wrap; 
+    margin-bottom: 1rem;  
     p{
        position: absolute;
        z-index: +1;
        font-size: 2rem;    
        color: $letraClara;
-       margin-right: 1rem;       
-        
+       margin-right: 1rem; 
     }
 
     img{

@@ -31,15 +31,42 @@ footer{
     @include navbarSecundaria;
 }
 
+.contenedorGaleria{
+    border: 1px solid $colorCalido;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
 .galeria{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    height: 100%;
+    position: relative;
+    
 }
 
 .fotoGaleria{
-    width: 45%;
-    margin: 1rem 0;    
+    height: 100%;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    
+}
+.flechas{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    a{
+        img{
+            height: 40px;
+            border-radius: 5px;
+        }
+    }
 }
 
 a{
@@ -59,5 +86,11 @@ a{
         "pie";
         grid-template-columns: 100%;
 
+    }
+}
+
+@media (max-width:600px){
+    .contenedorGaleria{
+        height: 250px;
     }
 }
